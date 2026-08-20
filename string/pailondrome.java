@@ -4,6 +4,9 @@ public class pailondrome {
         System.out.println("enter String : ");
         Scanner sc = new Scanner(System.in);
         String name = sc.next();
+        // int n = 909;
+        // String name = String.valueOf(n);
+        // int len = name.length();
         int n = name.length();
         int count = 0;
         for(int i=0;i<name.length()/2;i++){
@@ -16,5 +19,9 @@ public class pailondrome {
         }else {
             System.out.println("string is not pailondrome!");
         }
+
+        // int n = 9029;
+        // String ns = String.valueOf(n);
+
     }
 }
