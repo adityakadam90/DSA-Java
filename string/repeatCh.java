@@ -1,6 +1,6 @@
 public class repeatCh {
     public static void main(String args[]){
-        String str = "adityad";
+        String str = "adity";
         int c=1;
         for(int i=0;i<str.length()-1&&c==1;i++){
             for(int j=i+1;j<str.length();j++){
@@ -10,6 +10,9 @@ public class repeatCh {
                     break;
                 }
             }
+        }
+        if(c == 1){
+            System.out.println("not any repeated char in string.");
         }
 
     }
