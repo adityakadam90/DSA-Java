@@ -12,15 +12,27 @@
 // }
 
 public class subStr{
+    public static boolean PaiLon(String str){
+        int n = str.length();
+        for(int i=0;i<str.length()/2;i++){
+            if(str.charAt(i) != str.charAt(n-i-1)){
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String args[]){
-        String str = new String("helloWorld");
+        String str = new String("racecar");
         int c = 0;
         for(int i=0;i<str.length();i++){
             String temp = "";
             for(int j=i;j<str.length();j++){
                 temp += str.charAt(j);
                 c++;
-                System.out.println(temp);;
+                if(PaiLon(temp)){
+                    System.out.println(temp);
+                }
+
             }
             // System.out.println();
         }
